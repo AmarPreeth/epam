@@ -52,11 +52,23 @@ public class Main {
                          service.updateStudent(id, sname, sage, saddress);
                          break;
 
+                     case 4:
+                         System.out.println("Enter Student Id: ");
+                         int sid = sc.nextInt();
+                         service.viewStudentById(sid);
+                         break;
+
                      case 5:
                          System.out.println("Enter Id: to delete");
                          int did = sc.nextInt();
                          service.deleteStudent(did);
                          break;
+                    case 6:
+                         System.out.println("Thank you! Exiting...");
+                         System.exit(0);
+
+                   default:
+                         System.out.println("Invalid choice, please try again.");
 
 
 
@@ -65,3 +77,4 @@ public class Main {
              }
         }
     }
+
