@@ -60,23 +60,8 @@ public class StudentService {
         }
     }
     
-    public void deleteStudent(int id) {
-    for(int i = 0; i < count; i++) {
-        if(students[i].getUid() == id) {
-
-            for(int j = i; j < count - 1; j++){
-                students[j] = students[j + 1];
-            }
-            students[count - 1] = null;
-            count--;
-
-            System.out.println("Student Deleted Successfully");
-            return;
-        }
-    }
-    System.out.println("Student not found with given Id");
-}
-
+    
 
 }
+
 
