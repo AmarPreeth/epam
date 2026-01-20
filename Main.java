@@ -63,7 +63,8 @@ public class Main {
                          int did = sc.nextInt();
                          service.deleteStudent(did);
                          break;
-                    case 6:
+                    
+                     case 6:
                          System.out.println("Thank you! Exiting...");
                          System.exit(0);
 
@@ -77,4 +78,5 @@ public class Main {
              }
         }
     }
+
 
