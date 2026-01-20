@@ -59,9 +59,20 @@ public class StudentService {
             System.out.println("Student not foudn with given Id:");
         }
     }
+    public void viewStudentById(int id) {
+    for (int i = 0; i < count; i++) {
+        if (students[i].getUid() == id) {
+            System.out.println(students[i]);
+            return;
+        }
+    }
+    System.out.println("Student not found with given Id");
+}
+
     
     
 
 }
+
 
 
