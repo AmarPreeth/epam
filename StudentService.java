@@ -59,6 +59,7 @@ public class StudentService {
             System.out.println("Student not foudn with given Id:");
         }
     }
+    
     public void viewStudentById(int id) {
     for (int i = 0; i < count; i++) {
         if (students[i].getUid() == id) {
@@ -73,6 +74,7 @@ public class StudentService {
     
 
 }
+
 
 
 
